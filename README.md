@@ -9,5 +9,9 @@ Temp, humidity, and barometric pressure over Bluetooth with the Arduino Nano 33 
 
 ## BluetoothWeather2.ino
 Just like BluetoothWeather.ino, except it adds a value for elevation to show how writable characteristics work.
+
+## BluetoothWeather3.ino
+Replaces elevation characteristic with irradiance to measure cloud cover.
+
 ## irradiance.ino
 Measuring ambient light and putting it in proper units for reading via Bluetooth.
