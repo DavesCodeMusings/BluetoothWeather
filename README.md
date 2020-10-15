@@ -7,5 +7,7 @@ A very simple sketch outlining the basics of Bluetooth communication. One step u
 ## BluetoothWeather.ino
 Temp, humidity, and barometric pressure over Bluetooth with the Arduino Nano 33 Sense.
 
+## BluetoothWeather2.ino
+Just like BluetoothWeather.ino, except it adds a value for elevation to show how writable characteristics work.
 ## irradiance.ino
 Measuring ambient light and putting it in proper units for reading via Bluetooth.
