@@ -109,7 +109,7 @@ void loop() {
       // Update Bluetooth characteristic with new value.
       irradianceCharacteristic.writeValue((uint16_t) round(irradiance * 10)); // Shift for one decimal place.
 
-      // Delay between updates. (Don't make too long of connections start to timeout.)
+      // Delay between updates. (Don't make too long or connections start to timeout.)
       delay(1000);
     }
 
