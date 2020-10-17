@@ -21,4 +21,6 @@ A number of Python programs are included for reading the various sensor values a
 
 The Python code has been tested on Raspberry Pi 3B+ running Raspbian OS Lite with the pip3 package installed and Bleak library installed with pip3.
 
-sudo apt install python3-pip && sudo pip3 install bleak
+Install with: sudo apt install python3-pip && sudo pip3 install bleak
+
+Run discover.py to find the hardware address of your Arduino. Use that address as input to the remaining Python programs.
