@@ -1,19 +1,22 @@
 # Nano33BLESense
 A collection of Arduino sketches targeting the Nano 33 BLE Sense device. 
 
-## BluetoothBattery.ino
+## Arduino Sketches
+Run any one of these on an Arduino Nano 33 BLE Sense to collect data from the on-board sensors and make it available via Bluetooth Low Energy.
+
+### BluetoothBattery.ino
 A very simple sketch outlining the basics of Bluetooth communication. One step up from Hello World.
 
-## BluetoothWeather.ino
+### BluetoothWeather.ino
 Temp, humidity, and barometric pressure over Bluetooth with the Arduino Nano 33 Sense.
 
-## BluetoothWeather2.ino
+### BluetoothWeather2.ino
 Just like BluetoothWeather.ino, except it adds a value for elevation to show how writable characteristics work.
 
-## BluetoothWeather3.ino
+### BluetoothWeather3.ino
 Replaces elevation characteristic with irradiance to measure cloud cover.
 
-## irradiance.ino
+### irradiance.ino
 Measuring ambient light and putting it in proper units for reading via Bluetooth.
 
 ## Python client programs
