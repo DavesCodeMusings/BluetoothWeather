@@ -15,3 +15,10 @@ Replaces elevation characteristic with irradiance to measure cloud cover.
 
 ## irradiance.ino
 Measuring ambient light and putting it in proper units for reading via Bluetooth.
+
+## Python client programs
+A number of Python programs are included for reading the various sensor values advertised by the Arduino sketches. All are based on the example code provided by the Bleak library home page. https://github.com/hbldh/bleak
+
+The Python code has been tested on Raspberry Pi 3B+ running Raspbian OS Lite with the pip3 package installed and Bleak library installed with pip3.
+
+sudo apt install python3-pip && sudo pip3 install bleak
