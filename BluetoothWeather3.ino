@@ -1,5 +1,5 @@
 /*
- * Bluetooth Weather 2
+ * Bluetooth Weather 3
  * A simple example of using some of the built-in sensors and LEDs in the 
  * Arduino Nano 33 Sense and transmitting values via Blutooth Low Energy.
  * Use as a learning tool or the basis of a home automation sensor. This
@@ -133,7 +133,7 @@ void loop() {
       if (APDS.colorAvailable()) {
         int red, green, blue, ambient;
         APDS.readColor(red, green, blue, ambient);
-        irradiance = ambient / 2360; // irradiance is converted to Watts per square meter. See datasheet for typical irradiance responsivity. https://docs.broadcom.com/doc/AV02-4191EN
+        irradiance = (float) ambient / 2360; // irradiance is converted to Watts per square meter. See datasheet for typical irradiance responsivity. https://docs.broadcom.com/doc/AV02-4191EN
       }
 
       // Write values to serial port for debug.
