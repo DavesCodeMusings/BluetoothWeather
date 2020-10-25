@@ -93,7 +93,7 @@ void setup() {
   }
 
   // Set up Bluetooth Environmental Sensing service.
-  Serial.println("Setting up Environmental Sensing service with characteristics for pressure, temperature, and humidity.");
+  Serial.println("Setting up Environmental Sensing service with characteristics for pressure, temperature, humidity, and irradiance.");
   BLE.setLocalName("Nano33BLE");
   BLE.setAdvertisedService(environmentalSensingService);
 
@@ -158,7 +158,7 @@ void loop() {
       humidityCharacteristic.writeValue((uint16_t) round(humidity * 100)); // Shift for two decimal places.
       irradianceCharacteristic.writeValue((uint16_t) round(irradiance * 10)); // Shift for one decimal place.
 
-      // Delay between updates. (Don't make too long of connections start to timeout.)
+      // Delay between updates. (Don't make too long or connections start to timeout.)
       delay(100);
 
       // Forcibly disconnect any client that has been hanging on too long.
