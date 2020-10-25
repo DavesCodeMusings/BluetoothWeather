@@ -123,7 +123,7 @@ void loop() {
     digitalWrite(LED_BUILTIN, HIGH);
     Serial.print("Incoming connection from: ");
     Serial.println(central.address());
-    connect_timeout = 60; // Equates to seconds when while loop delay is 1000mS.
+    connect_timeout = 600; // Equates to tenths of seconds when while loop delay is 100mS.
 
     while (central.connected()) {
       // Get readings from sensors and update the charcteristic values.
@@ -159,7 +159,7 @@ void loop() {
       irradianceCharacteristic.writeValue((uint16_t) round(irradiance * 10)); // Shift for one decimal place.
 
       // Delay between updates. (Don't make too long of connections start to timeout.)
-      delay(1000);
+      delay(100);
 
       // Forcibly disconnect any client that has been hanging on too long.
       connect_timeout--;
