@@ -134,7 +134,7 @@ void loop() {
         int red, green, blue, ambient;
         APDS.readColor(red, green, blue, ambient);
         Serial.print("New ambient count: ");
-        Serial.println(a);
+        Serial.println(ambient);
         irradiance = (float) ambient / 2360; // irradiance is converted to Watts per square meter. See datasheet for typical irradiance responsivity. https://docs.broadcom.com/doc/AV02-4191EN
       }
 
