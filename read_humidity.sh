@@ -3,7 +3,7 @@
 # The output will be a percentage as specified by the characteristic.
 
 # Default BLE address to use or get from command-line.
-ADDRESS="71:A2:AE:D8:21:30"
+ADDRESS="12:34:56:78:9A:BC"
 if [ "$1" != "" ]; then
   ADDRESS=$1
 fi
