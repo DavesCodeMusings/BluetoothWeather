@@ -13,7 +13,7 @@ printf "%d\n" $(gatttool --device=$ADDRESS --char-read --uuid=0x2a6f | awk '{ pr
 # Explanation of how it works:
 #
 # gatttool --device=$ADDRESS --char-read --uuid=0x2a6f
-#   Read the characteristic for temperature. The output will be come with
+#   Read the characteristic for humidity. The output will be come with
 #   extra info that's not needed.
 # awk '{ printf("0x%s%s\n", $5, $4) }')
 #   Extract only the two pairs of hex digits from the output. These are in
@@ -22,5 +22,5 @@ printf "%d\n" $(gatttool --device=$ADDRESS --char-read --uuid=0x2a6f | awk '{ pr
 #   Take the 0x0DC1 from gatttool | awk, and convert it to a decimal number.
 # sed 's/..$/\.&/'
 #   Take the printf output and insert a decimal point two characters from the
-#   right, because the GATT temperature characteristic has a resolution of two
+#   right, because the GATT humidity characteristic has a resolution of two
 #   decimal places.
