@@ -27,3 +27,6 @@ The Python code has been tested on Raspberry Pi 3B+ running Raspbian OS Lite wit
 Install with: sudo apt install python3-pip && sudo pip3 install bleak
 
 Run discover.py to find the hardware address of your Arduino. Use that address as input to the remaining Python programs.
+
+## Shell client programs
+The shell programs all use gatttool to read from the Bluetooth Low Energy device. Awk and sed are used to give just the value without any of the extra information.
