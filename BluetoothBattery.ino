@@ -79,7 +79,7 @@ void loop() {
     while (central.connected()) {
 
       // If there were an actual battery, read its capacity and report with:
-      // batteryLevelCharacteristic.writeValue(<batteyPercent>);
+      // batteryLevelCharacteristic.writeValue(<batteryPercent>);
       // where <batteryPercent> is an unsigned char value between 0 and 100.
 
       // Delay between updates. (Don't make too long of connections start to timeout.)
